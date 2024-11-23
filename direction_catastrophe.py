@@ -15,4 +15,23 @@ n = int(input('Enter the no. of Steps in direction: '))
 
 dir = [input('Enter the Direction :') for i in range(n)]
 
+i = 0
+while i < len(dir):  # Use a while loop to handle index changes
+    j = i + 1
+    pair_found = False
+    while j < len(dir):
+        # Check for canceling pairs
+        if (dir[i] == 'N' and dir[j] == 'S') or \
+           (dir[i] == 'S' and dir[j] == 'N') or \
+           (dir[i] == 'E' and dir[j] == 'W') or \
+           (dir[i] == 'W' and dir[j] == 'E'):
+            # Remove the pair
+            dir.pop(j)  # Remove j first as it comes after i
+            dir.pop(i)  # Remove i
+            pair_found = True
+            break  # Restart the loop as indices have changed
+        j += 1
+    if not pair_found:  # Only move to the next element if no pair was found
+        i += 1
+
 print(dir)
