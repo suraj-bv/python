@@ -1,3 +1,40 @@
-1. Write a function to merge two sorted lists into one sorted list without using any built-in sorting functions
-2. Given a string, write a function to find the first non-repeating character. If none exist, return None.
-3. Implement a function to flatten a nested list. For example, [[1,2,[3]],4] should return [1,2,3,4].
+Basic Level
+
+Write a program to swap two variables without using a third variable.
+Write a function that takes a list of numbers and returns their sum.
+Check if a given number is a palindrome.
+Write a program to count the occurrences of each word in a string.
+Create a program that checks if a given string is an anagram of another string.
+Write a Python program to print the Fibonacci sequence up to n terms.
+Reverse a list without using the reverse() function.
+Write a function that accepts a list and returns the largest number.
+Check if a given year is a leap year.
+Write a program to find the factorial of a given number using recursion.
+
+
+Intermediate Level
+
+Write a function to sort a list of tuples based on the second element.
+Create a program to generate a random password with specific requirements (e.g., length, mix of characters).
+Write a Python program to find the longest word in a sentence.
+Implement a function that finds all prime numbers in a given range.
+Write a Python script to flatten a nested list.
+Create a program to implement a simple calculator using functions.
+Write a program to find the second largest number in a list.
+Develop a function that finds the most frequent element in a list.
+Implement a function that returns a dictionary with the frequency of each character in a string.
+Write a Python program to solve a quadratic equation.
+
+
+Challenge Level
+
+Write a function to check if two strings are rotations of each other.
+Implement a program to find the GCD and LCM of two numbers.
+Write a function to check if a given matrix is symmetric.
+Develop a program that merges two sorted lists into one sorted list.
+Write a Python program to find all subsets of a given set.
+Create a function to check if a string is a valid identifier.
+Write a Python program to find the longest increasing subsequence in a list.
+Implement a function to perform binary search on a sorted list.
+Write a Python program to remove duplicate elements from a list without using set().
+Create a function that implements the Caesar cipher for string encryption.
