@@ -6,7 +6,7 @@ def prime_no(n):
         return
     for num in range(2, n + 1):
         is_prime = True
-        for divisor in range(2, int(num ** 0.5) + 1):  # Only check up to the square root of the number
+        for divisor in range(2, int(num ** 0.5) + 1):
             if num % divisor == 0:
                 is_prime = False
                 break
