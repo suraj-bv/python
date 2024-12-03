@@ -1,10 +1,7 @@
-# reading the no. of elements
 n = int(input('Enter the no. of elements: '))
 
-# initializing an empty list
 l = []
 
-# reading all the elements of the list
 for i in range(n):
     l.append(int(input('Enter the elements: ')))
 
