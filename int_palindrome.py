@@ -2,7 +2,13 @@ num = int(input('Enter the number: '))
 is_palindrome = False
 original_num = num
 
+# Function to reverse the digits of a number
+# This function takes an integer as input and returns its reverse.
+# If the input is an negative number it returns false as negative numbers are not considered palindromes.
+
 def reverse(num):
+    if num < 0:
+        return 'Given number is not a palindrome'
     reversed_num = 0
     while(num != 0):
         digit = num % 10
