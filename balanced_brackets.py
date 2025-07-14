@@ -3,15 +3,14 @@ def is_balanced(s):
     pairs = {')': '(', '}': '{', ']': '['}
 
     for char in s:
-        if char in "({[":  # If it's an opening bracket
+        if char in "({[":
             stack.append(char)
-        elif char in ")}]":  # If it's a closing bracket
-            if not stack or stack[-1] != pairs[char]:  # Check for match
+        elif char in ")}]":
+            if not stack or stack[-1] != pairs[char]:
                 return False
-            stack.pop()  # Remove the last opening bracket
-    return len(stack) == 0  # True if no unmatched brackets
+            stack.pop()
+    return len(stack) == 0
 
-# Test cases
 test_strings = ["()", "(())", "(()[])", "{[()]}", "({[()]})", "(", ")", "({[}])", "(()", "())", "(}[)"]
 
 for s in test_strings:
