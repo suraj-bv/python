@@ -19,6 +19,5 @@ class Solution:
                 total -= curr
             else:
                 total += curr
-            prev = curr
-            
+            prev = curr            
         return total
