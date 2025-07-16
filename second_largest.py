@@ -1,6 +1,11 @@
-l = [1,5,2,5,7,8,11,9,15,66]
+l = [1,5,15,2,35,7,8,11,9,66]
 
 n = len(l)
+
+def swap(a, b):
+    l[a] = l[a] + l[b]
+    l[b] = l[a] - l[b]
+    l[a] = l[a] - l[b]
 
 for i in range(n-1):
     min = i
@@ -8,7 +13,7 @@ for i in range(n-1):
         if l[min] > l[j]:
             min = j
     if min != i:
-        l[min] ,l[i] = l[i], l[min]
+        swap(min, i)
         
 print(l)
 
