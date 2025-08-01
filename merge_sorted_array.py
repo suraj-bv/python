@@ -20,3 +20,12 @@ class Solution:
             nums1[k] = nums2[j]
             j -= 1
             k -= 1
+
+
+class Solution:
+    def kthElement(self, a, b, k):
+        # code here
+        new_list = a + b
+        new_list.sort()
+        
+        return new_list[k-1]
