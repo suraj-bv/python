@@ -9,7 +9,7 @@ class Palindrome {
         int n = str.length();
         Boolean isPalindrome = true;
         for(int i = 0; i < n/2; i++){
-            if str.charAt[i] != str.charAt[n -i -1]{
+            if (str.charAt(i) != str.charAt(n -i -1)){
                 isPalindrome = false;
             }
         }
@@ -18,6 +18,7 @@ class Palindrome {
         } else {
             System.out.println("The given string is NOT a PALNDROME");
         }
+        sc.close();
     }
 
 }
