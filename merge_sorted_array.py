@@ -29,3 +29,20 @@ class Solution:
         new_list.sort()
         
         return new_list[k-1]
+
+
+from typing import List
+# This code is for finding the median of two sorted arrays
+# In this code we are merging the two arrays and then finding the median using + and / operators
+
+class Solution:
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+        newList = nums1 + nums2
+        newList.sort()
+        res = len(newList) % 2
+        if res == 0:
+            mid = len(newList) // 2
+            return (newList[mid - 1] + newList[mid]) / 2
+        elif res == 1:
+            mid = len(newList) // 2
+            return newList[mid]
