@@ -34,6 +34,7 @@ class Solution:
 from typing import List
 # This code is for finding the median of two sorted arrays
 # In this code we are merging the two arrays and then finding the median using + and / operators
+# Solved my first hard problem in LeetCode
 
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
