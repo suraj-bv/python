@@ -31,3 +31,10 @@ class Solution:
                     right = mid - 1
     
         return -1
+
+class Solution:
+    def search(self, nums: List[int], target: int) -> bool:
+        if target in nums:
+            return True
+        else:
+            return False
