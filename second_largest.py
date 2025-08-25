@@ -25,3 +25,15 @@ for i in range(len(l)-1):
         max = l[i+1]
     
 print(max)
+
+from typing import List
+
+class Solution:
+    def thirdMax(self, nums: List[int]) -> int:
+        distinct = list(set(nums))
+        distinct.sort()
+
+        if len(distinct) >= 3:
+            return distinct[-3]
+
+        return distinct[-1]
