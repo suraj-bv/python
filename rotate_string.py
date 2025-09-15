@@ -22,3 +22,15 @@ class Solution:
     
 # The time complexity of this optimized function is O(n),
 # where n is the length of the strings. This is because we are concatenating s1
+
+
+class Solution:
+    def rotateString(self, s: str, goal: str) -> bool:
+        if len(s) != len(goal):
+            return False
+        
+        for i in range(len(s)):
+            if s[i:] + s[:i] == goal:
+                return True
+
+        return False
