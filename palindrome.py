@@ -44,3 +44,20 @@ class Solution:
             length += 1
 
         return length
+
+
+from typing import List
+
+class Solution:
+    def firstPalindrome(self, words: List[str]) -> str:
+        for word in words:
+            n = len(word)
+            is_palindrome = True
+            for i in range(n):
+                if word[i] != word[n - i -1]:
+                    is_palindrome = False
+            
+            if is_palindrome:
+                return word
+
+        return ''
