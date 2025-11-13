@@ -1,0 +1,19 @@
+class Solution:
+    def summaryRanges(self, nums: List[int]) -> List[str]:
+        res = []
+        i= 0
+        n = len(nums)
+        while i < n:
+            start = nums[i]
+# move until numbers are consecutive
+            while i + 1 < n and nums[i + 1]==nums[i] + 1:
+                i+=1
+            end = nums [i]
+ # single number
+            if start == end:
+                res.append(str(start))
+            else:
+                res.append(f"{start}->{end}")
+            i += 1
+        
+        return res
