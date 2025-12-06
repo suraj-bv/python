@@ -40,3 +40,5 @@ Write a Python program to find the longest increasing subsequence in a list.
 Implement a function to perform binary search on a sorted list.
 Write a Python program to remove duplicate elements from a list without using set().
 Create a function that implements the Caesar cipher for string encryption.
+
+added questions 
